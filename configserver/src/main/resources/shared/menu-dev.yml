@@ -1,0 +1,16 @@
+server:
+  port: 8030
+spring:
+  application:
+    name: menu
+  datasource:
+    name: xzz
+    url: jdbc:mysql://localhost:3306/xzz?useUnicode=true&characterEncoding=UTF-8
+  username: root
+  password: 123456
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8762/eureka/
+  instance:
+    prefer-ip-address: true
